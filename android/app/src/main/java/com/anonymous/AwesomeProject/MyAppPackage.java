@@ -14,13 +14,11 @@ public class MyAppPackage implements ReactPackage {
 
     @Override
     public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
-//        return Collections.emptyList();
         return Arrays.<ViewManager>asList(
-                new ReactImageManager(reactContext),
-                new MyViewManager(reactContext)
+                new ReactImageManager(reactContext), // second
+                new MyViewManager(reactContext) // third
         );
     }
-
    // imports the native module you created, CalendarModule.
    // It then instantiates CalendarModule within the createNativeModules() function
    // and returns it as a list of NativeModules to register
@@ -28,9 +26,7 @@ public class MyAppPackage implements ReactPackage {
     public List<NativeModule> createNativeModules(
             ReactApplicationContext reactContext) {
         List<NativeModule> modules = new ArrayList<>();
-
-        modules.add(new CalendarModule(reactContext));
-
+        modules.add(new CalendarModule(reactContext)); // the first demo
         return modules;
     }
 

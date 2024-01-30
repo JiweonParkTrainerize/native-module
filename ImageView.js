@@ -7,4 +7,4 @@ import {requireNativeComponent} from 'react-native';
  * - borderRadius: number
  * - resizeMode: 'cover' | 'contain' | 'stretch'
  */
-module.exports = requireNativeComponent('RCTImageView');
+module.exports = requireNativeComponent('MYCustomImageView');

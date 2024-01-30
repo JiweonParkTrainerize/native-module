@@ -17,7 +17,7 @@ import java.util.Map;
 
 public class ReactImageManager extends SimpleViewManager<ReactImageView> {
 
-    public static final String REACT_CLASS = "RCTImageView";
+    public static final String REACT_CLASS = "MYCustomImageView";
     ReactApplicationContext mCallerContext;
 
     public ReactImageManager(ReactApplicationContext reactContext) {
